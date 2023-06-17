@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>{% block title %}{% endblock title %}</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    {% block head-content %} {% endblock head-content %}
+  </head>
+  <body>
+    <div class="header">
+      <div class="logo">Conan's Pets</div>
+      <div class="nav">
+        <a href="">Inicio</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#">Contacto</a>
+        <a href="admin">Intranet</a>
+      </div>
+    </div>
+    {% block body %}{% endblock body %}
+    <footer>
+      <small>© 2023 - Todos los derechos reservados</small>
+    </footer>
+  </body>
+</html>
